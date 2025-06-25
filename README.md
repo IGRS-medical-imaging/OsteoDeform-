@@ -1,8 +1,15 @@
-<h1 align="center">OsteoDeform: Removal of Distal Femoral Osteophytes using Neural Flow Deformers for Total Knee Arthroplasty</h1>
+<h1 align="center">OsteoDeform: Osteophyte-Aware Shape Deformations of Distal Femur Models for Surgical Planning in Total Knee Arthroplasty
+</h1>
 
 <p  align="center">  
   
-`Total Knee Arthroplasty (TKA)` using `Computed Tomography (CT)` scans for image guided intervention with the assistance of 3D knee models, has been proven to improve surgical outcomes when compared to manual TKA procedures. The occurrence of `osteophytes` or bone spurs at the knee joint is attributed mainly to bone loss and ligament instability. This significantly alters the anatomy, hindering segmentation and causing erroneous computation of distal and proximal femur cuts, thus making `preoperative planning` inaccurate. This could lead to incorrect `sizing and placement of implants`, consequently deteriorating the clinical progress. The proposed OsteoDeform is designed to remove bone spurs from 3D knee models, thereby improving the surgical outcomes in image-guided TKA.OsteoDeform utilizes `neural flow deformers` on an in-house generated dataset OSTFemur-dataset. It effectively removes over 70.7% of the distal femoral osteophytes. A `femoral morphometric analysis` conducted for clinical validation showed an average morphometric error of only 0.022 ± 0.05, thereby showing that the femoral contours are preserved and closely resemble its pre-osteophytic stage.
+`Abstract`. Image-guided robotic Total Knee Arthroplasty (TKA) using Computed Tomography (CT) scans with the assistance of 3D femur models, has been proven to improve surgical outcomes as compared to traditional TKA procedures. The occurrence of osteophytes or bone spurs at the knee joint is attributed mainly to bone loss and ligament instability. This significantly alters the anatomy, making surgical planning
+inaccurate.
+`Problem Statement`: Given an osteophytic 3D distal femur model, removal of osteophytes during surgical planning facilitates accurate knee segmentation and precise kinematic computation, thus improving TKA
+outcomes. 
+`Method`: We propose OsteoDeform, a geometric learning framework specifically to remove osteophytes from 3D femur models. We generate the [OSTFemur-Dataset](https://zenodo.org/records/15718534) containing paired osteophytic and healthy distal
+femur models on which OsteoDeform is trained.
+`Results`: OsteoDeform effectively removes over 70.7% of the distal femoral osteophytes while achieving an average morphometric error of only 0.022±0.05 mm, thereby preserving the anatomical integrity of the distal femur
 </p>
 
 <h3 > <i>Index Terms</i> </h3> 
@@ -10,9 +17,9 @@
   :diamond_shape_with_a_dot_inside: Total Knee Arthroplasty (TKA)
   :diamond_shape_with_a_dot_inside: Computed Tomography (CT)
   :diamond_shape_with_a_dot_inside: Osteophyte removal
-  :diamond_shape_with_a_dot_inside: Preoperative planning
-  :diamond_shape_with_a_dot_inside: Implant sizing
-  :diamond_shape_with_a_dot_inside: Neural flow deformers
+  :diamond_shape_with_a_dot_inside: Surgical Planning
+  :diamond_shape_with_a_dot_inside: Shape-based Deformations 
+  :diamond_shape_with_a_dot_inside: Geometric Learning
   :diamond_shape_with_a_dot_inside: Femoral morphometric analysis
   
 
@@ -52,7 +59,7 @@
 <details>
 You can download the dataset from the following link:
 
-🔗 [OSTFemur-Dataset](https://drive.google.com/drive/folders/1ulmbzvWUVoI6JJHFxmsbB9RR39qNuSak?usp=sharing)
+🔗 [OSTFemur-Dataset](https://zenodo.org/records/15718534)
 
 The OSTFemur-dataset has 495 osteophytic femur models as PLY meshes with their corresponding healthy femurs.  
 55 healthy femurs have 9 osteophytic femur variations each; every healthy femur model has three Grade 4 (Severe), four Grade 3 (moderate) and two Grade 2 (mild) osteophytic femur models.

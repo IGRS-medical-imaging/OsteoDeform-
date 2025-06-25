@@ -107,7 +107,7 @@ test/
 
 ## <div align="center">Methodology</div>
 <p align="center">
-  <img src="methodology.png">
+  <img src="methodology_final.png">
 </p>
 <div align = "center">
   
